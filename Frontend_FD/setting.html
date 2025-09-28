@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fraud Detection AI - Settings</title>
+<link rel="stylesheet" href="style.css">
+<script defer src="script.js"></script>
+</head>
+<body>
+<video autoplay muted loop id="bgVideo">
+  <source src="https://cdn.pixabay.com/vimeo/444572567/finance-1080p.mp4" type="video/mp4">
+</video>
+<div class="overlay"></div>
+<div id="flying-icons"></div>
+
+<nav>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="dashboard.html">Dashboard</a></li>
+    <li><a href="analytics.html">Analytics</a></li>
+    <li><a href="upload.html">Upload</a></li>
+    <li><a href="reports.html">Reports</a></li>
+    <li><a href="alerts.html">Alerts</a></li>
+    <li><a href="news.html">News</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="settings.html" class="active">Settings</a></li>
+  </ul>
+  <button class="toggleTheme">🌙</button>
+</nav>
+
+<section class="settings-section">
+  <h2>Settings</h2>
+  <div class="card">
+    <label for="threshold">Fraud Threshold:</label>
+    <input type="range" id="threshold" name="threshold" min="0" max="100" value="50">
+  </div>
+  <div class="card">
+    <label for="notifications">Enable Alerts:</label>
+    <input type="checkbox" id="notifications" checked>
+  </div>
+</section>
+</body>
+</html>

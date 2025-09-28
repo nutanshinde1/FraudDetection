@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Fraud Detection AI — Reports</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <video autoplay muted loop id="bgVideo" playsinline>
+    <source src="https://cdn.pixabay.com/vimeo/444572567/finance-1080p.mp4" type="video/mp4" />
+  </video>
+  <div class="backdrop"></div>
+  <div id="flying-icons"></div>
+
+  <nav class="nav">
+    <div class="brand"><img src="https://cdn-icons-png.flaticon.com/512/11782/11782377.png" alt="logo" /><span>FraudDetectAI</span></div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li><a href="analytics.html">Analytics</a></li>
+      <li><a href="upload.html">Upload</a></li>
+      <li><a href="reports.html" class="active">Reports</a></li>
+      <li><a href="alerts.html">Alerts</a></li>
+      <li><a href="news.html">News</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="toggleTheme">🌙</button>
+    </div>
+  </nav>
+
+  <main class="reports">
+    <h2 class="section-title">Reports</h2>
+    <p>Download summarized fraud reports or generate custom date-range reports.</p>
+
+    <div class="report-cards">
+      <div class="card glass">
+        <h4>Daily Report</h4>
+        <p>Summary for last 24 hours</p>
+        <div class="card-actions"><button class="btn primary">Download CSV</button></div>
+      </div>
+      <div class="card glass">
+        <h4>Weekly Report</h4>
+        <p>Aggregated weekly metrics</p>
+        <div class="card-actions"><button class="btn primary">Download CSV</button></div>
+      </div>
+      <div class="card glass">
+        <h4>Monthly Report</h4>
+        <p>Monthly details & charts</p>
+        <div class="card-actions"><button class="btn primary">Download PDF</button></div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">FraudDetectAI — Reports</footer>
+</body>
+</html>

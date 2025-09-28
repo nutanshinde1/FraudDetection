@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Fraud Detection AI — Home</title>
+
+  <!-- Google font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <!-- background video -->
+  <video autoplay muted loop id="bgVideo" playsinline>
+    <source src="https://cdn.pixabay.com/vimeo/444572567/finance-1080p.mp4" type="video/mp4" />
+  </video>
+  <div class="backdrop"></div>
+
+  <!-- flying icons container -->
+  <div id="flying-icons"></div>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="brand">
+      <img src="https://cdn-icons-png.flaticon.com/512/11782/11782377.png" alt="logo" />
+      <span>FraudDetectAI</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li><a href="analytics.html">Analytics</a></li>
+      <li><a href="upload.html">Upload</a></li>
+      <li><a href="reports.html">Reports</a></li>
+      <li><a href="alerts.html">Alerts</a></li>
+      <li><a href="news.html">News</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="toggleTheme">🌙</button>
+
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero-inner">
+      <h1 class="glow">Fraud Detection AI</h1>
+      <p class="sub">Detect fraudulent transactions in real-time using explainable ML and beautiful analytics.</p>
+      <div class="hero-cta">
+        <a class="btn primary" href="dashboard.html">Go to Dashboard</a>
+        <a class="btn ghost" href="upload.html">Upload CSV</a>
+      </div>
+      <div class="stat-row">
+        <div class="stat-card">
+          <p class="stat-title">Transactions</p>
+          <p class="stat-value" data-target="15000">0</p>
+        </div>
+        <div class="stat-card">
+          <p class="stat-title">Frauds</p>
+          <p class="stat-value" data-target="230">0</p>
+        </div>
+        <div class="stat-card">
+          <p class="stat-title">Accuracy</p>
+          <p class="stat-value" data-target="96">0</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- FEATURES -->
+  <section class="features">
+    <h2 class="section-title">Core Features</h2>
+    <div class="cards">
+      <article class="card animate">
+        <div class="card-icon"><img src="https://img.icons8.com/ios-filled/50/ffffff/transaction-list.png" /></div>
+        <h3>Live Monitoring</h3>
+        <p>Stream transactions and get instant fraud scoring with alerts.</p>
+      </article>
+
+      <article class="card animate">
+        <div class="card-icon"><img src="https://img.icons8.com/ios-filled/50/ffffff/data-sheet.png" /></div>
+        <h3>CSV Upload</h3>
+        <p>Bulk analyze transaction files — backed by robust preprocessing.</p>
+      </article>
+
+      <article class="card animate">
+        <div class="card-icon"><img src="https://img.icons8.com/ios-filled/50/ffffff/graph-report.png" /></div>
+        <h3>Analytics</h3>
+        <p>Interactive charts, trends, and downloadable reports.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <p>Built with ❤️ by NSSK — FraudDetectAI • Prototype</p>
+  </footer>
+</body>
+</html>

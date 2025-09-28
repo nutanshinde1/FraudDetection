@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Fraud Detection AI — Analytics</title>
+
+  <!-- Fonts & Styles -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <!-- Background Video -->
+  <video autoplay muted loop id="bgVideo" playsinline>
+    <source src="https://cdn.pixabay.com/vimeo/444572567/finance-1080p.mp4" type="video/mp4" />
+  </video>
+  <div class="backdrop"></div>
+  <div id="flying-icons"></div>
+
+  <!-- NAVIGATION -->
+  <nav class="nav">
+    <div class="brand">
+      <span>FraudDetectAI</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li><a href="analytics.html" class="active">Analytics</a></li>
+      <li><a href="upload.html">Upload</a></li>
+      <li><a href="reports.html">Reports</a></li>
+      <li><a href="alerts.html">Alerts</a></li>
+      <li><a href="news.html">News</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="toggleTheme">🌙</button>
+    </div>
+  </nav>
+
+  <!-- MAIN CONTENT -->
+  <main class="analytics">
+    <h2 class="section-title">Analytics</h2>
+
+    <div class="charts wide">
+      <div class="chart-card">
+        <h4>Fraud Types</h4>
+        <canvas id="fraudTypeChart"></canvas>
+      </div>
+      <div class="chart-card">
+        <h4>Weekly Transaction Volume</h4>
+        <canvas id="transactionVolumeChart"></canvas>
+      </div>
+    </div>
+
+    <section class="top-insights">
+      <h4>Top Insights</h4>
+      <ul>
+        <li>Most fraudulent merchants: Merchant_42, Merchant_19</li>
+        <li>Peak fraud hours: 2 AM — 5 AM</li>
+        <li>Highest risk channel: Online transfers</li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">FraudDetectAI — Analytics</footer>
+</body>
+</html>

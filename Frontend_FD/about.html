@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Fraud Detection AI — About</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <video autoplay muted loop id="bgVideo" playsinline>
+    <source src="https://cdn.pixabay.com/vimeo/444572567/finance-1080p.mp4" type="video/mp4" />
+  </video>
+  <div class="backdrop"></div>
+  <div id="flying-icons"></div>
+
+  <nav class="nav">
+    <div class="brand"><img src="https://cdn-icons-png.flaticon.com/512/11782/11782377.png" alt="logo" /><span>FraudDetectAI</span></div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li><a href="analytics.html">Analytics</a></li>
+      <li><a href="upload.html">Upload</a></li>
+      <li><a href="reports.html">Reports</a></li>
+      <li><a href="alerts.html">Alerts</a></li>
+      <li><a href="news.html">News</a></li>
+      <li><a href="about.html" class="active">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="toggleTheme">🌙</button>
+    </div>
+  </nav>
+
+  <main class="about">
+    <h2 class="section-title">About FraudDetectAI</h2>
+    <p>This prototype demonstrates a frontend for a fraud detection platform. Backend (Flask/Django) can be connected to receive CSVs, run ML scoring, and return results. Key ideas:</p>
+    <ul>
+      <li>Real-time scoring & alerting</li>
+      <li>Explainable ML features to interpret decisions</li>
+      <li>Exportable reports & admin controls</li>
+    </ul>
+  </main>
+
+  <footer class="site-footer">FraudDetectAI — About</footer>
+</body>
+</html>

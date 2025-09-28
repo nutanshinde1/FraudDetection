@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Fraud Detection AI — Dashboard</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <video autoplay muted loop id="bgVideo" playsinline>
+    <source src="https://cdn.pixabay.com/vimeo/444572567/finance-1080p.mp4" type="video/mp4" />
+  </video>
+  <div class="backdrop"></div>
+  <div id="flying-icons"></div>
+
+  <nav class="nav">
+    <div class="brand">
+      <img src="https://cdn-icons-png.flaticon.com/512/11782/11782377.png" alt="logo" />
+      <span>FraudDetectAI</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="dashboard.html" class="active">Dashboard</a></li>
+      <li><a href="analytics.html">Analytics</a></li>
+      <li><a href="upload.html">Upload</a></li>
+      <li><a href="reports.html">Reports</a></li>
+      <li><a href="alerts.html">Alerts</a></li>
+      <li><a href="news.html">News</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="toggleTheme">🌙</button>
+    </div>
+  </nav>
+
+  <main class="dashboard">
+    <h2 class="section-title">Overview</h2>
+
+    <div class="cards">
+      <div class="card glass">
+        <h4>Total Transactions</h4>
+        <p class="big counter" data-target="15000">0</p>
+      </div>
+      <div class="card glass">
+        <h4>Fraudulent</h4>
+        <p class="big counter" data-target="230">0</p>
+      </div>
+      <div class="card glass">
+        <h4>Safe Transactions</h4>
+        <p class="big counter" data-target="14770">0</p>
+      </div>
+      <div class="card glass">
+        <h4>Model Accuracy</h4>
+        <p class="big counter" data-target="96">0<span class="small">%</span></p>
+      </div>
+    </div>
+
+    <section class="charts">
+      <div class="chart-card">
+        <h4>Fraud vs Safe</h4>
+        <canvas id="fraudChart"></canvas>
+      </div>
+      <div class="chart-card">
+        <h4>Transactions Over Time</h4>
+        <canvas id="transactionChart"></canvas>
+      </div>
+    </section>
+
+    <section class="alerts-panel">
+      <h4>Recent Alerts</h4>
+      <div class="alert-list">
+        <div class="alert-card fraud">#1234 — Card stolen — 98% risk</div>
+        <div class="alert-card">#5678 — Suspicious IP — 67% risk</div>
+        <div class="alert-card fraud">#9101 — Rapid transfers — 92% risk</div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">FraudDetectAI — Dashboard</footer>
+</body>
+</html>
